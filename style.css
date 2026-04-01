@@ -1,0 +1,161 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigasi */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span { color: #3498db; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover { color: #3498db; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content img{
+    width: 30%;
+    border-radius: 50%;
+    border: solid 8px white;    
+}
+
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.hero h1 span { color: #3498db; }
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #2980b9; }
+
+/* Section Common */
+section { padding: 100px 20px; max-width: 1200px; margin: auto; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+.card img { width: 100%; border-radius: 5px; }
+
+/* Contact Form */
+.hubungi{
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact img{
+    width: 20px;
+    flex-direction: row;
+    margin: 20px;
+}
+
+
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.skill ul{
+    list-style: none;
+    
+}
+
+.skill img{
+    width: 30px;
+}
+
+/* Responsif (Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Disembunyikan untuk menu mobile */
+    }
+    
+    .hero h1 { font-size: 2.5rem; }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
